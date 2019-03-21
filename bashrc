@@ -7,6 +7,12 @@ export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
 
+# Enable color output
+export CLICOLOR=1
+
+# Update colors for ls for black term background
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
 # append to the history file, don't overwrite it
 shopt -s histappend
 
